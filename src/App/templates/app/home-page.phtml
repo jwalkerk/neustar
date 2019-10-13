@@ -1,0 +1,27 @@
+<?php $this->layout('layout::default', ['title' => 'Home']) ?>
+
+<div class="jumbotron">
+    <h3> <span class="zf-green">Neustar Costa Rica Domain Name Resolution Site</span></h3>
+    <h3> <span class="text-danger">Congratulations you made it!</span></h3>    
+    <p >This site translates domain names in their corresponding IP addresses. Add all domains separated by comma's.</p>
+    <form id="frmSearch">
+        <p><input type="text" id="domains" id="domains" class="form-control" required placeholder="ex. google.com,nacion.com,php.net"></p>
+        <p><button id="btnClick" class="btn btn-lg btn-success btn-block">Search Domain(s) <i class="fas fa-search"></i></button></p>
+    </form>
+
+</div>
+
+<div class="alert alert-danger" role="alert" style="display: none">
+
+</div>    
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-primary" role="alert">
+            <h5>Translation Results</h5>
+        </div>
+        <ul class="list-group">
+
+        </ul>
+    </div>
+</div>
